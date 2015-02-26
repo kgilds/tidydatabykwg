@@ -1,0 +1,300 @@
+---
+title: "Python Notebook"
+author: "Kevin Gilds"
+date: "Thursday, June 05, 2014"
+output: html_document
+---
+
+# Python for Informatics: Exploring Information
+
+
+## Why Code
+
+
+
+
+
+## Introduction
+
+Running python from command line  c:\python27\python
+
+
+
+
+# Chapter 2--Variables Expressions and Statements
+
+1. Value letter or number
+
+  Type of values
+   1. String ~ string of letters enclosed in quotation marks "Hello World"
+   2. Interger a number such as 10
+   3. Float   a number with a decimal place -- 3.2
+   
+2. Variable is a name that refers to a value.
+
+3. Assignment statement creates a new variable and gives them value
+
+4. Variables in Python can have letters and numbers but must begin with a letter or underscore.
+
+5. Reserved Words
+
+  and 
+  as
+  assert
+  break
+  class
+  continue
+  def
+  del
+  elif
+  else
+  except
+  exec
+  finally
+  for
+  from
+  global
+  if
+  import
+  in
+  is
+  lambda
+  not
+  or
+  pass
+  print
+  raise
+  return
+  try
+  while
+  with 
+  yield
+
+Two types of statements
+ 1. Print
+ 2. Assignment
+ 
+ A script is a sequence of statments. 
+ 
+ 
+## Operators
+
+Operators are special symbols that represent computation. The values that the operators are applied to are called operands. 
+
+## Expressions
+
+Expressions are a combination of values, variables, and operators. 
+
+## Order of Operations
+
+PEMDAS
+
+Parenthese
+Expontiation
+Multiplication and Division
+from left to right
+
+Modulus Operator
+%
+Returns the reminder when dividing two numbers. 
+
+
+## Raw Input
+
+raw_input() asks users for input. 
+
+
+## /N
+
+tells python to creat a new line in the code. 
+
+## Glossary
+
+1. Concatentate: To join two operands end to end.
+
+2. comment: Information in a program that meant for other programmers and has no effect on the execution of the program.
+
+3. evaluate: To simplify an expression by performing the operations in order to yield a single value.
+
+4. expression: A combination of variables, operators, and values that represents a single result value.
+
+5. floating-point: A type that represents numbers with fractional points.
+
+6. floor division: The operation that divides two numbers and chops off the fraction part.
+
+7. interger: A type that represents whole numbers.
+
+8. keyword: A reserved word that is used by the complier to parse a program; you can use these words to declare a varibel.
+
+9. mnemonic: A memory aid. We often give variable names to help us recall what is stored in the variable.
+
+10. modulus operator: An operator, denoted with a percent (%), that works on intergers and yields the remainder when one number is divided by another.
+
+11. operand: One of the values on which an operator operates
+
+12. operator: A special symbol that represents a simple computation like addition, multiplication, or string concatetenation.
+
+13. rules of precedence: The set of rules governing the order in which expressions involving multiple operators and operands are evaluated.
+
+14. statement: A section of code that represents a command or action. So far the statements we have seen are assignments and print statements.
+
+15. string: A type that represents a sequence of characters.
+
+16. type: A category of values. 
+
+17. value: One of the basic units of data like a number or string that a program manipultates.
+
+18. variable: A name that refers to a value. 
+
+# Chapter 3
+
+## Operators
+
+== Equals
+
+x != y             # x is not equal to y
+x > y              # x is greater than y
+x < y              # x is less than y
+x >= y             # x is equal to or greater than y    
+x <= y             # x is equal to or less than y
+x is y             # x is the same as y
+x is not y         # x is not the same as y
+
+
+## Glossary
+
+1. body: The sequence of statements within a compound statement
+
+2. boolean expression: An expression whose value is either True or False
+
+3. branch: One of the alternative sequences of statements in a conditional statements.
+
+4. chained conditinal: A condtional statement with a series of alternative branches.
+
+5. comparison operator: One of the operators that compares its operands 
+
+6. conditional statement: A statement that controls the flow of execution depending on some condition
+
+7. condtion: the boolean expression in a conditional statement that determines which branch is executed.
+
+8. guardian pattern: Where we construct a logical expression with additional comparisons to take advantage of the short circuit behaivor.
+
+9. logical operator: one of the operators that combines boolean expressions and, or, and not.
+
+
+10. nested condtiondals: A condtional statement that appears in one of the brances of another conditional statement.
+
+11. tracebak: A list of the functions that are executing, printed when an expection occurrs.
+
+12. short circuit: When python is part way through evaluating a logical expression and stops the evaluation expression because Python knows the final value for the expression without needing 
+
+
+# chapter 4 <Functions>
+
+A function is a named sequence of statements.
+
+1. Built in functions.
+
+2. Type conversion functions
+
+3. Random Numbers
+
+4. Math functions
+
+## Making your own function
+
+1. def: tells python we are creating/defining a new function
+
+def print_lyrics ():  #Header
+    print "I am a happy bear"# Body
+    pringt "I am awesome"
+    
+2. Run functions within 
+
+
+def repeat_lyrics ():
+    print_lyrics()
+    print_lyrics()
+    
+    
+## Flow of execution
+
+statements are executed one at a time from top to bottom 
+
+
+## Why use functions
+
+1. Name a group of statmets to make program easier to read.
+
+2. Eliminated repitiive code. Database impact only make the change once.
+
+3. Easier to debug.
+
+4. Useful for other programs. 
+
+
+# Glossary
+
+1. algorithm: A general process for solving a category of problems.
+
+2. argument: A value provided to a function when called. This value is assigned to the cooresponding parameter in the function.
+
+3. body: the sequence of statments inside a function definition.
+
+4. composition: Using an expression as a part of larger expression or a  statement as part of a larger statement. 
+
+5. deterministic: Pertaining to a program that does the same thing each time it runs given the same input.
+
+6. dot notation: The syntax for calling a funtion in another module by specifiying the module name followed by a dot period and the function name. 
+
+7. flow of execution: The order in which statements are executed during a program run.
+
+8. fruitful function: A function that returns a value
+
+9. function: A named sequence of statements that performs some useful operation.       Functions may or may not take arguments and may or may not produce a         
+        result.
+
+10. function call: A statements that executes a funtion. It consists of the         
+        function name followed by an argument list.
+
+11. function definition: A statement that creates a new function, specifiying     
+        its name pararmeters, and the statement it executes. 
+
+12. function object: A value created by a function definition. The name of the 
+        function is a variable that refers to a function object. 
+    
+13. header: The first line of a function defintion
+
+14. import statement: A statement that reads a module file and creates a module 
+        object.
+        
+15. Module object: A value created by an import statement that provides access 
+        to the data and code defined in a module.
+    
+16. parameter: A name used inside a function to refer to the value passed as an         
+        argument. 
+        
+17. pseudorandom: Pertaining to a sequnece of a numbers that appear to be     
+        random but are generated by a deterministic program.
+        
+18. return value: The result of a function. If a function call is used as an expression the return vale is the value of the expression. 
+
+19. void function:  A function that does not return a value. 
+
+
+# Chapter 5
+
+
+1. While Statements
+ 
+ 1. Flow of while statment:
+    
+    1. Evaluate the condition yielding True or False
+    2. If the condition is False exit the while statement and continue the execution at the next statement.
+    3. If the condition is true execute the body and then go back to step 1
+    
+This type of flow is called a loop because the third step loops back around to the top Each time we execute the body of the loop we call it an iteration. 
+
+The body of the loop should change the value of one or more variables so that eventually the condition becomes false and the loop terminates. We call the variables that change each time the loop executes and controls when the loop finishes is the iteration variable. If there is no iteration variable the loop will repeat forever. 
+    
+
