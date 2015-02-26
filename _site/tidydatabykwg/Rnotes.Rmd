@@ -1,0 +1,90 @@
+# General Tips 
+
+If you are new to R and or computer programming a challenging feature is learning to work with your working directory. Dealing with your working directory is easy once you have established the habit. 
+
+1. Get or Set Working Directory
+
+1. getwd()
+2. setwd()
+
+When working with a data frame and you create the script you can use the first script to set the working directory to the directory where the file is.
+
+______________________________________________________________________________________________
+
+##  Read and Write Data
+
+read.csv
+
+
+write.csv(data, "name of file.csv", row.names=FALSE)
+
+save()
+
+load()
+You can also save an R object to a file. This is very handy when you want to reference a data set with R markdown documents. In Markdown files the global environment is empty and needed to be loaded into the environment. This is both handy and annoying. 
+
+-------------------------------------------------------------------------------------------------
+
+# Data Management
+
+## Interesting Resource
+
+http://ww2.coastal.edu/kingw/statistics/R-tutorials/dataframes.html
+
+## check for NA's or missing values
+
+is.na(x) # returns TRUE of x is missing
+
+http://www.statmethods.net/input/missingdata.html
+
+## Subset Data:
+
+1.  http://www.ats.ucla.edu/stat/r/faq/subset_R.htm
+
+2. http://adv-r.had.co.nz/Subsetting.html
+
+## dplyr
+
+
+1. Examples: http://cran.r-project.org/web/packages/dplyr/vignettes/introduction.html
+
+## Reshape2
+
+1. Examples: http://seananderson.ca/2013/10/19/reshape.html
+
+## Merge Function
+
+1. Examples: https://kb.iu.edu/d/azux
+
+
+# Data Vis
+
+1. GGPLOT2 
+
+Make the bar sort in some sort of order: 
+http://stackoverflow.com/questions/5208679/order-bars-in-ggplot2-bar-graph
+
+
+## Tree Map
+```{r}
+require(treemap)
+pie.sales <- c(.15, 0.12, 0.18, .22,.33)
+flavors <- c("Blueberry", "Cherry","Apple", "Key-Lime", "Black-Berry")
+
+
+piesales1<-data.frame(pie.sales,flavors)
+tree1<-treemap(piesales1, index="flavors", vSize="pie.sales", type="index")
+
+```
+
+
+
+# Presentations
+
+## Slidify
+
+http://slidify.org/
+
+To get slidify to work 
+
+slidify("index.Rmd")
